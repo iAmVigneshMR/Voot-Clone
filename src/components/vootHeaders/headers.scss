@@ -1,0 +1,108 @@
+$font : 'Rubik', sans-serif;
+$color : #0d0620;
+$color1 : #ffffff;
+$color2 : #9e9ba5;
+$color3 : #440785;
+$color4 : #2a2440;
+
+#vootHeaders
+{
+    background-color: $color;
+    width: 100%;
+    position: fixed;
+    font-size: 2rem;
+    color: $color1;
+    position: relative;
+    article{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        margin: 0 auto;
+    }
+    .vootLogo{
+        flex-basis: 40%;
+        display: flex;
+        justify-content: flex-start;
+        img{
+            width: 62px;
+            height: 23px;
+            vertical-align: baseline;
+        }
+        span{
+            color: aqua;
+            padding: 0px 15px 0px 15px;
+        }
+        button{
+            background-color: #29d4b6;
+            border-radius: 3px;
+            border: none;
+            outline: none;
+            padding: 0px 10px;
+            font-size: 1.2rem;
+            font-weight: bolder;
+        }
+    }
+    .vootMenu{
+        display: flex;
+        justify-content: flex-end;
+        flex-basis: 60%;
+    }
+    #vootMenuBlock{
+        display: flex;
+        .authMenu li a{
+            padding: 10px;
+            color: $color1;
+        }
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        li a{
+            color: $color2;
+            text-decoration: none;
+            font-size: 1.5rem;
+            opacity: 0.6;
+            padding: 21px 16px;
+        }
+        li a.active{
+            border-top: 2px solid $color3;
+            opacity: 1;
+            color: $color1;
+        }
+    }
+    .dropdown{
+        background: $color4;
+        width: 250px;
+        height: auto;
+        position: absolute;
+        right: 63px;
+        top: 58px;
+        border-radius: 3px;
+        ul{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            li a{
+                border-bottom: 1px solid #fff;
+                width: 97%;
+                display: block;
+                padding: 5px 0px;
+                opacity: 1;
+                margin: 0px -19px;
+            }
+            li:last-child a{
+                border: none;
+            }
+        }
+        .arrow-up{
+            border-bottom: 13px solid $color4;
+            position: absolute;
+            top: -13px;
+            right: 10px;
+            z-index: 1111;
+            border-left: 13px solid transparent;
+            border-right: 13px solid transparent;
+        }
+    }
+}

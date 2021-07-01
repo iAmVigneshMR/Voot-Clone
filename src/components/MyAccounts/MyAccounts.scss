@@ -1,0 +1,168 @@
+#MyAccountBlock article{
+    display: flex;
+    background-color: #251e35;
+    height: 100%;
+    color: #fff;
+    aside{
+        flex-basis: 20%;
+        background-color: #2a2440;
+        padding: 10px;
+        header{
+            background: #251e35;
+            height: 150px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 4px;
+            border-bottom: 5px solid #7f0dff57;
+            margin-bottom: 10px;
+            img{
+                border-radius: 100%;
+                height: 100px;
+                width: 100px;
+            }
+            h3{
+                color: #fff;
+                margin: 20px 0;
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                font-weight: bold;
+                text-shadow: 1px 1px 1px #7f0dff;
+            }
+            figure a {
+                position: relative;
+                span {
+                    position: absolute;
+                    right: 0;
+                    color: #fff;
+                    font-size: 1.3rem;
+                    background: #7f0dff;
+                    padding: 4px;
+                    border-radius: 100%;
+                    border: 2px solid #5909b3;
+                    height: 30px;
+                    width: 30px;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  }
+              }
+        }
+    }
+    main{
+        flex-basis: 80%;
+        padding: 10px;
+        height: 60vh;
+        h4{
+            font-size: 2rem;
+            padding: 10px;
+            border-bottom: 3px solid #5909b3;
+        }
+    }
+}
+
+// uploadphoto starts
+.profile_block {
+    width: 100% !important;
+    // height: 100vh !important;
+    margin: 0px auto;
+    article > div {
+        background: #2c2542;
+        padding: 30px;
+        color: #fff;
+        border-radius: 5px !important;
+        width: 90% !important;
+      }
+      article {
+        width: 90% !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        margin: auto;
+      }
+      button {
+        width: auto !important;
+        border-radius: 4px;
+        background: linear-gradient(263deg, #5909b3, #7f0dff);
+        color: #fff;
+        outline: none;
+        border: none;
+        margin: 10px 0;
+        padding: 15px 0;
+        padding: 16px 43px !important;
+        float: right;
+        cursor: pointer;
+      }
+}
+
+  
+// uploadphoto stops
+
+// progress bar starts
+progress {
+    background-color: #7f0dff;
+}
+
+progress[value] {
+    /* Reset the default appearance */
+    width: 95%;
+    height: 10px;
+    position: relative;
+    left: 55px;
+    border-radius: 2px;
+    background-color: #7f0dff;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+.progressBlock {
+    display: flex;
+    height: 10px;
+    width: 100%;
+    align-items: center;
+}
+.leftProgress {
+    flex-basis: 85%;
+}
+.rightProgress {
+    flex-basis: 5%;
+}
+
+#MyAccountBlock main li,
+#MyAccountBlock footer li {
+  list-style: none;
+  padding: 10px 0;
+}
+
+#MyAccountBlock main li a,
+#MyAccountBlock footer li a {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 5px 0;
+  text-decoration: none;
+}
+
+#MyAccountBlock footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  button {
+    width: 100%;
+    border-radius: 4px;
+    background: linear-gradient(263deg, #e74c3c, #ff0d50);
+    color: #fff;
+    outline: none;
+    border: none;
+    margin: 10px 0;
+    padding: 9px 14px;
+    cursor: pointer;
+  }
+  main ul {
+    background: #4b207c1a;
+    padding: 10px;
+    margin: 10px 0;
+    border-top: 2px solid #7f0dff5e;
+  }
+}
+// progress bar stops

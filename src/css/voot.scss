@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+
+$font : 'Rubik', sans-serif;
+$color : #0d0620;
+
+body,html
+{
+    margin: 0px;
+    padding: 0px;
+    // overflow-x: hidden;
+    font-size: 62.5%;
+    height: 100%;
+    font-family: $font;
+    background-color:$color;
+}

@@ -1,0 +1,140 @@
+#vootHeaders {
+  background-color: #0d0620;
+  width: 100%;
+  position: fixed;
+  font-size: 2rem;
+  color: #ffffff;
+  position: relative;
+}
+
+#vootHeaders article {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  margin: 0 auto;
+}
+
+#vootHeaders .vootLogo {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#vootHeaders .vootLogo img {
+  width: 62px;
+  height: 23px;
+  vertical-align: baseline;
+}
+
+#vootHeaders .vootLogo span {
+  color: aqua;
+  padding: 0px 15px 0px 15px;
+}
+
+#vootHeaders .vootLogo button {
+  background-color: #29d4b6;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  padding: 0px 10px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+#vootHeaders .vootMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+#vootHeaders #vootMenuBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#vootHeaders #vootMenuBlock .authMenu li a {
+  padding: 10px;
+  color: #ffffff;
+}
+
+#vootHeaders ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+#vootHeaders ul li a {
+  color: #9e9ba5;
+  text-decoration: none;
+  font-size: 1.5rem;
+  opacity: 0.6;
+  padding: 21px 16px;
+}
+
+#vootHeaders ul li a.active {
+  border-top: 2px solid #440785;
+  opacity: 1;
+  color: #ffffff;
+}
+
+#vootHeaders .dropdown {
+  background: #2a2440;
+  width: 250px;
+  height: auto;
+  position: absolute;
+  right: 63px;
+  top: 58px;
+  border-radius: 3px;
+}
+
+#vootHeaders .dropdown ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+}
+
+#vootHeaders .dropdown ul li a {
+  border-bottom: 1px solid #fff;
+  width: 97%;
+  display: block;
+  padding: 5px 0px;
+  opacity: 1;
+  margin: 0px -19px;
+}
+
+#vootHeaders .dropdown ul li:last-child a {
+  border: none;
+}
+
+#vootHeaders .dropdown .arrow-up {
+  border-bottom: 13px solid #2a2440;
+  position: absolute;
+  top: -13px;
+  right: 10px;
+  z-index: 1111;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+}
+/*# sourceMappingURL=headers.css.map */
