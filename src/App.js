@@ -19,6 +19,8 @@ import PublicRoute from './components/util/PublicRoute';
 import UpdatePassword from './components/MyAccounts/UpdatePassword';
 import UpdatePhoneNumber from './components/MyAccounts/UpdatePhoneNumber';
 import CreateMovies from './components/VootMovies/CreateMovies';
+import Movie from './components/VootMovies/Movie';
+import VideoPlayer from './components/VootMovies/VideoPlayer';
 
 
 
@@ -61,6 +63,29 @@ const App = () => {
                 <PublicRoute path="/otp" exact>
                     <Otp />
                 </PublicRoute>
+
+               
+          {!firebase.auth().currentUser ? (
+            <PublicRoute path="/shows/:movie_name/:id" exact>
+              <Movie />
+            </PublicRoute>
+          ) : (
+            <PrivateRoute path="/shows/:movie_name/:id">
+              <Movie />
+            </PrivateRoute>
+          )}
+
+          {!firebase.auth().currentUser ? (
+            <PublicRoute path="/movie/:movie_name/:id" exact>
+              <VideoPlayer />
+            </PublicRoute>
+          ) : (
+            <PrivateRoute path="/movie/:movie_name/:id">
+              <VideoPlayer />
+            </PrivateRoute>
+          )}
+                
+
                 <PrivateRoute path="/account">
                     <MyAccounts users={users} />
                 </PrivateRoute>
@@ -72,7 +97,8 @@ const App = () => {
                 </PrivateRoute>
                 <PrivateRoute path="/movies/upload-movies" exact>
                     <CreateMovies users={users} />
-                </PrivateRoute>
+                </PrivateRoute> 
+                
                 {/* page not found always be at end */}
                 <Route path="*">
                     <PageNotFound />

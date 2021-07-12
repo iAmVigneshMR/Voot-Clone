@@ -65,7 +65,7 @@ $color4 : #2a2440;
             opacity: 0.6;
             padding: 21px 16px;
         }
-        li a.active{
+        li a:hover{
             border-top: 2px solid $color3;
             opacity: 1;
             color: $color1;
@@ -79,6 +79,7 @@ $color4 : #2a2440;
         right: 63px;
         top: 58px;
         border-radius: 3px;
+        z-index: 111;
         ul{
             display: flex;
             flex-direction: column;
@@ -90,6 +91,11 @@ $color4 : #2a2440;
                 padding: 5px 0px;
                 opacity: 1;
                 margin: 0px -19px;
+            }
+            li a:hover{
+                border-top: none;
+                opacity: 1;
+                color: $color1;
             }
             li:last-child a{
                 border: none;

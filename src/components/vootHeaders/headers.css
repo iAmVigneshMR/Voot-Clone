@@ -88,7 +88,7 @@
   padding: 21px 16px;
 }
 
-#vootHeaders ul li a.active {
+#vootHeaders ul li a:hover {
   border-top: 2px solid #440785;
   opacity: 1;
   color: #ffffff;
@@ -102,6 +102,7 @@
   right: 63px;
   top: 58px;
   border-radius: 3px;
+  z-index: 111;
 }
 
 #vootHeaders .dropdown ul {
@@ -122,6 +123,12 @@
   padding: 5px 0px;
   opacity: 1;
   margin: 0px -19px;
+}
+
+#vootHeaders .dropdown ul li a:hover {
+  border-top: none;
+  opacity: 1;
+  color: #ffffff;
 }
 
 #vootHeaders .dropdown ul li:last-child a {

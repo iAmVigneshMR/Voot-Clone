@@ -14,3 +14,25 @@ body,html
     font-family: $font;
     background-color:$color;
 }
+
+.carousel-slider {
+    height: 450px !important;
+  }
+  
+  .thumbs-wrapper {
+    display: none;
+  }
+  .carousel .slide img {
+    width: 100%;
+    padding: 0px 5px;
+    vertical-align: top;
+    border-radius: 20px;
+    border: 0;
+    // border: 2px solid blue;
+}
+.Toastify{
+    font-size: 1.5rem;
+}
+.carousel-root{
+    padding-bottom: 50px;
+}
